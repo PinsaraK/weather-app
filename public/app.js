@@ -12,7 +12,7 @@ function getGeo() {
       console.log(data);
       const temp = (data.weather.main.temp - 273.15).toFixed(0);
       const desc = data.weather.weather[0].main;
-      document.getElementById("weather").textContent = `${temp}°, ${desc}`;
+      document.getElementById("weather").textContent = `${temp}° C, ${desc}`;
 
       const pubData = { lat, lon, temp };
       const options = {
