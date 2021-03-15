@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+}
+p {
+  padding: 10px;
+  display: inline-block;
+}
+a {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#mapid {
+  margin-top: 10px;
+}

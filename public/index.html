@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script src="app.js"></script>
+  </head>
+  <body class="bg-dark">
+    <a
+      href="./logs/"
+      style="font-size: large"
+      class="my-3 mx-1 text-warning btn badge badge-primary"
+      >Logs</a
+    >
+    <div
+      id="container"
+      style="height: 90vh"
+      class="d-flex justify-content-center align-items-center"
+    >
+      <div
+        id="content"
+        style="display: inline-block"
+        class="text-center rounded-3 border border-warning bg-warning"
+      >
+        <div class="m-4">
+          <h1>Weather app</h1>
+          <p width="400px">
+            latitude: <span id="lat"></span>°<br />
+            longitude: <span id="lon"></span>°<br />
+            Temperature: <span id="weather"></span>
+          </p>
+          <br />
+          <button
+            id="btn-1"
+            class="btn btn-outline-dark btn-lg"
+            onclick="getGeo()"
+          >
+            Get Coordinates
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
